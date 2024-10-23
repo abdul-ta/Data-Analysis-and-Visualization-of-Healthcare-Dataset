@@ -46,9 +46,14 @@ Key Features
   Diagnosis and Outcome Comparison: Visualizes the relationship between patient diagnosis and outcomes.
 
 How to Run the Project
-  Place the healthcare_data.csv in the same directory as the script.
+Place the healthcare_data.csv in the same directory as the script.
+
+Clone the repository:
+
+  git clone https://github.com/abdul-ta/Data-Analysis-and-Visualization-of-Healthcare-Dataset.git
+
   
-  Run the Python script using:
+Run the Python script using:
 
     python healthcare_analysis.py
 
