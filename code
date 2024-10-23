@@ -1,0 +1,54 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+# Load the dataset
+df = pd.read_csv('healthcare_data.csv')
+# Display initial information
+print("Initial Data:")
+print(df.head())
+print("\nData Info:")
+print(df.info())
+print("\nDescriptive Statistics:")
+print(df.describe(include='all'))
+# Data Cleaning (if needed)
+# For this simple example, no additional cleaning is required.
+# Descriptive Statistics
+print("\nAge Distribution:")
+print(df['Age'].describe())
+# Distribution Analysis
+plt.figure(figsize=(10, 6))
+sns.histplot(df['Age'], bins=10, kde=True)
+plt.title('Age Distribution of Patients')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
+# Gender Distribution
+plt.figure(figsize=(8, 6))
+sns.countplot(x='Gender', data=df)
+plt.title('Gender Distribution of Patients')
+plt.xlabel('Gender')
+plt.ylabel('Count')
+plt.show()
+# Outcome Distribution
+plt.figure(figsize=(8, 6))
+sns.countplot(x='Outcome', data=df)
+plt.title('Outcome Distribution')
+plt.xlabel('Outcome')
+plt.ylabel('Count')
+plt.show()
+# Diagnosis and Outcome
+plt.figure(figsize=(12, 8))
+sns.countplot(x='Diagnosis', hue='Outcome', data=df)
+plt.title('Diagnosis and Outcome Comparison')
+plt.xlabel('Diagnosis')
+plt.ylabel('Count')
+plt.legend(title='Outcome')
+plt.show()
+# Treatment and Outcome
+plt.figure(figsize=(12, 8))
+sns.countplot(x='Treatment', hue='Outcome', data=df)
+plt.title('Treatment and Outcome Comparison')
+plt.xlabel('Treatment')
+plt.ylabel('Count')
+plt.legend(title='Outcome')
+plt.show()
