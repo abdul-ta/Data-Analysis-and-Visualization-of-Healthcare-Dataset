@@ -1,0 +1,11 @@
+PatientID,Age,Gender,Diagnosis,Treatment,Outcome
+P001,45,Male,Hypertension,Medication,Recovered
+P002,60,Female,Diabetes,Insulin,Stable
+P003,55,Male,Heart Disease,Surgery,Improving
+P004,38,Female,Asthma,Inhalers,Recovered
+P005,50,Male,Hypertension,Medication,Stable
+P006,70,Female,Diabetes,Insulin,Recovered
+P007,42,Male,Asthma,Inhalers,Stable
+P008,63,Female,Heart Disease,Surgery,Improving
+P009,50,Female,Hypertension,Medication,Recovered
+P010,35,Male,Diabetes,Insulin,Stable
